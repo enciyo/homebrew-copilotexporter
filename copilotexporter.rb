@@ -12,4 +12,8 @@ class Copilotexporter < Formula
     virtualenv_install_with_resources
   end
 
+  test do
+    system bin/"copilotexporter", "--hep"
+  end
+
 end
