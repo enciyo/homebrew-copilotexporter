@@ -3,8 +3,8 @@ class Copilothistoryexporter < Formula
 
   desc "This package exports the history of GitHub Copilot chat history."
   homepage "https://github.com/enciyo/gh-copilot-history-export"
-  url "https://github.com/enciyo/gh-copilot-history-export/archive/refs/tags/v1.0.8.tar.gz"
-  sha256 "47f8c502d4aadc1e5b5bf2b38b13b335a0ae793548685195dd3b9e840d5ead3c"
+  url "https://github.com/enciyo/gh-copilot-history-export/archive/refs/tags/v1.0.10.tar.gz"
+  sha256 "69d7575ee930a852393dfbd0ded1b36cd363981d2e4774733fe442b7d1ce5269"
   depends_on "python@3.9"  # Adjust if necessary
 
 
