@@ -1,4 +1,4 @@
-class Copilotexporter < Formula
+class Copilothistoryexporter < Formula
   include Language::Python::Virtualenv
 
   desc "This package exports the history of GitHub Copilot chat history."
