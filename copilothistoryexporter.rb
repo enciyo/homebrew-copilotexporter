@@ -14,8 +14,6 @@ class Copilothistoryexporter < Formula
     venv.pip_install resources
     venv.pip_install_and_link buildpath
 
-    system "brew", "install", "mitmproxy"
-
   end
 
 
