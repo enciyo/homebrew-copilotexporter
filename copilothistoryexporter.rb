@@ -3,18 +3,24 @@ class Copilothistoryexporter < Formula
 
   desc "This package exports the history of GitHub Copilot chat history."
   homepage "https://github.com/enciyo/gh-copilot-history-export"
-  url "https://github.com/enciyo/gh-copilot-history-export/archive/refs/tags/v1.0.14.tar.gz"
-  sha256 "4a20716b774168316d56f0ffd7f9f076ee84ae3eac507e09b874cf156a127db1"
-  depends_on "python@3.9"  # Adjust if necessary
+  url "https://files.pythonhosted.org/packages/c6/6d/0d4dcb726b6d0e2c654baa115d310f8cbbef9e97be44698ad222f51229f4/copilothistoryexporter-1.2.4.tar.gz"
 
+  depends_on "python@3.12"  # Adjust if necessary
+  depends_on "mitmproxy"
 
 
   def install
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python3")
+    venv.pip_install resources
+    venv.pip_install_and_link buildpath
+
+    system "brew", "install", "mitmproxy"
+
   end
 
+
   test do
-    system bin/"copilotexporter", "--hep"
+    system bin/"copilothistoryexporter", "--help"
   end
 
 end
