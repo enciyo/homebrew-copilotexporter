@@ -1,4 +1,4 @@
-class Copilothistoryexporter < Formula
+class GhChe < Formula
   include Language::Python::Virtualenv
 
   homepage "https://github.com/enciyo/gh-che"
