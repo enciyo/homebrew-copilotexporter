@@ -3,7 +3,7 @@ class GhChe < Formula
 
   homepage "https://github.com/enciyo/gh-che"
   desc "This package exports the history of GitHub Copilot chat history."
-  version "1.0.1"
+  version "1.0.2"
   url "https://github.com/enciyo/gh-che/archive/refs/heads/main.zip"
 
 
@@ -12,7 +12,7 @@ class GhChe < Formula
   def install
       system "pip3 install . " + " --prefix=#{prefix}"
   end
-  test do
+  test dobr
     system bin/"che", "--help"
   end
 
