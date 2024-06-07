@@ -4,8 +4,8 @@ class GhChe < Formula
   homepage "https://github.com/enciyo/gh-che"
   desc "This package exports the history of GitHub Copilot chat history."
   version "1.0.3"
-  url "https://github.com/enciyo/gh-che/archive/refs/tags/v1.0.2.tar.gz"
-  sha256 "cb60aa605f1efdd56b984a3f9789b9b172a04569322ea7c7e64de07871084873"
+  url "https://github.com/enciyo/gh-che/releases/tag/v1.0.3"
+  sha256 "287421e7356fcc8b8d7fe19d4f97e070017b692dddb5f9fdbdd9fac8497c1a2a"
 
   depends_on "python@3.11" => :build
 
