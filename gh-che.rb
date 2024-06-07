@@ -6,7 +6,7 @@ class GhChe < Formula
   version "1.0.5"
   url "https://github.com/enciyo/gh-che/archive/refs/tags/v1.0.5.tar.gz"
 
-  depends_on "python@3.11" => :build
+  depends_on "python@3.11"
 
   def install
       system "pip3 install --upgrade pip"
