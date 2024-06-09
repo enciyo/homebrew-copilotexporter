@@ -15,7 +15,7 @@ class GhChe < Formula
 
   def install
       system "pip3 install --upgrade pip"
-      system "pip3 install . " + " --prefix=#{prefix}"
+      system "pip3 install . " + "--user --prefix=#{prefix}"
   end
 
 
