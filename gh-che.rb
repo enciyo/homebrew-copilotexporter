@@ -14,8 +14,7 @@ class GhChe < Formula
   depends_on "python@3.11" => :build
 
   def install
-      system "pip3 install --upgrade pip"
-      system "pip3 install . " + "--user --prefix=#{prefix}"
+      system "pip3 install . " + "--prefix=#{prefix}"
   end
 
 
