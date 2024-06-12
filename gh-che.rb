@@ -2,7 +2,7 @@ class GhChe < Formula
   include Language::Python::Virtualenv
 
   # read from the version git spesific repository
-  raw_url = "https://raw.githubusercontent.com/enciyo/gh-che/main/che.properties"
+  raw_url = "https://raw.githubusercontent.com/enciyo/gh-che/main/che/che.properties"
   sh = `curl -s #{raw_url}`
   version = sh.split("\n").select { |line| line.include? "version" }[0].split("=")[1]
 
